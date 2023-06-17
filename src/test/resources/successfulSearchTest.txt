@@ -1,0 +1,39 @@
+0) TEST_DATA:
+[
+   ['https://selenide.org', 'Selenide'],
+   ['https://junit.org', 'JUnit 5']
+]
+
+1) ЗАГОЛОВОК: "В поисковой выдаче google присутствует url 'TES_DATA[0]' для запроса ''TES_DATA[1]'"
+2) ПРИОРОИТЕТ: BLOCKER
+3) ПРЕДУСЛОВИЯ: - Открыт браузер chrome, location: https://google.com
+
+4) ШАГИ
+- Ввести в поле поиска 'TES_DATA[1]'
+- Нажать Enter
+
+5) ОЖИДАЕМЫЙ РЕЗУЛЬТАТ:
+- В поисковой выдаче google присутствует url 'TES_DATA[0]'
+
+
+
+0) TEST_DATA:
+[
+   ['Selenide'],
+   ['JUnit 5']
+]
+
+1) ЗАГОЛОВОК: "В поисковая выдача google не пустая для запроса 'TES_DATA[0]'"
+2) ПРИОРОИТЕТ: BLOCKER
+3) ПРЕДУСЛОВИЯ: - Открыт браузер chrome, location: https://google.com
+
+4) ШАГИ
+- Ввести в поле поиска 'TES_DATA[0]'
+- Нажать Enter
+
+5) ОЖИДАЕМЫЙ РЕЗУЛЬТАТ:
+- Поисковая выдача google не пустая
+
+
+
+
